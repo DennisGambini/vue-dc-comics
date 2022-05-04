@@ -1,14 +1,16 @@
 <template>
     <div class="outer">
         <div class="wrapper">
+            <div class="container">
 
-            <ul v-for="(lista, index) in liste" :key="index">
-                <li>{{lista.name}}</li>
-                <li v-for="(link, indice) in lista.content" :key="indice">
-                    {{link.item}}
-                </li>
-            </ul>
-
+            
+                <ul v-for="(lista, index) in liste" :key="index">
+                    <li>{{lista.name}}</li>
+                    <li v-for="(link, indice) in lista.content" :key="indice">
+                        {{link.item}}
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -153,14 +155,17 @@ export default {
         padding: $section-padding;
     }
     .wrapper{
-        height: 300px;
+        @include wrapper;
+    }
+    .container{
+        height: 250px;
+        width: 40%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 30px;
-        @include wrapper
+        gap: 20px;
     }
     ul{
         @include footer-middle-ul;

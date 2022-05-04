@@ -74,6 +74,14 @@ export default {
             color: white;
             text-transform: uppercase;
             font-size: $ul-font-size;
+            cursor: pointer;
+            border: 1px solid rgba(0,0,0,0);
+            border-radius: 5px;
+            padding: 6px;
+            &:hover{
+                background-color: #137bdd;
+                border-color: white;
+            }
             img{
                 height: 45px;
             }
