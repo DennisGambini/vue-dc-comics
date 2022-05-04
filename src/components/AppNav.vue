@@ -64,10 +64,24 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/style/variables';
 
+    *{
+        text-transform: uppercase;
+    }
     ul{
+        height: 50px;
         list-style: none;
+        border: 1px solid black;
         @include flex-row-between;
         gap: 20px;
+        li{
+            
+            cursor: pointer;
+            height: 100%;
+            &:hover{
+                color: $blue;
+                border-bottom: 3px solid;
+            }
+        }
     }
 
 </style>

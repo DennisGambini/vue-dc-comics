@@ -11,4 +11,10 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
+};
+@mixin wrapper {
+    width: 75%;
+    margin: 0 auto;
 }
+$blue: #0282F9; 
+$bg-black: #1C1C1C;

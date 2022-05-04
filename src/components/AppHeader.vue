@@ -1,12 +1,14 @@
 <template>
-    <div class="header-container">
+    
 
-        <div class="logo">
-            <img src="../assets/images/dc-logo.png" alt="dc logo">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="../assets/images/dc-logo.png" alt="dc logo">
+            </div>
+            <app-nav/>
         </div>
-        <app-nav/>
 
-    </div>
+   
 </template>
 
 <script>
@@ -23,8 +25,9 @@ export default {
 <style lang="scss" scoped>
     @import '../assets/style/variables';
 
-   .header-container{
-       @include flex-row-around;
+   .wrapper{
+       @include flex-row-between;
+       @include wrapper;
    }
-
+    
 </style>
