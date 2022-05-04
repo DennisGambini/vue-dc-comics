@@ -23,7 +23,7 @@ export default {
        color: white;
    }
    .wrapper{
-       padding: 40px 0;
+       padding: $section-padding;
        @include wrapper;
    }
     

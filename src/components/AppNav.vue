@@ -2,7 +2,9 @@
     <nav>
         <ul>
             <li v-for="(link, index) in links" :key="index">
-                {{link.name}}
+                <a href="#">
+                    {{link.name}}
+                </a>
             </li>
         </ul>
     </nav>
@@ -67,19 +69,31 @@ export default {
     *{
         text-transform: uppercase;
     }
+    nav{
+        height: 100%;
+    }
     ul{
-        height: 50px;
-        list-style: none;
-        border: 1px solid black;
         @include flex-row-between;
+        height: 100%;
+        list-style: none;
         gap: 20px;
+        font-size: $ul-font-size;
+        font-weight: $ul-font-weight;
+        
         li{
-            
-            cursor: pointer;
             height: 100%;
+            cursor: pointer;
+            
             &:hover{
-                color: $blue;
-                border-bottom: 3px solid;
+                a{
+                    color: $blue;
+                }
+                border-bottom: 3px solid $blue;
+            }
+            a{
+                color: $footer-color;
+                display: block;
+                padding-top: 32px;
             }
         }
     }

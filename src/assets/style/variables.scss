@@ -4,6 +4,9 @@ $blue: #0282F9;
 $bg-black: #1C1C1C;
 
 // sizing
+$ul-font-size: 12px;
+$ul-font-weight:500;
+$section-padding: 40px 0;
 
 // mixins
 @mixin btn{
@@ -12,6 +15,11 @@ $bg-black: #1C1C1C;
     background-color: rgba(0,0,0,0);
     border: 2px solid $blue;
     color: white;
+    cursor: pointer;
+    &:hover{
+        color: $blue;
+        border-color: white;
+    }
 }
 @mixin flex-row-between {
     display: flex;
@@ -53,6 +61,7 @@ $bg-black: #1C1C1C;
     li:first-of-type{
         font-size: 1.2em;
         color: white;
+        margin-bottom: 15px;
         &:hover{
             color: red;
         }

@@ -150,6 +150,7 @@ export default {
 
     .outer{
         background-image: url('../assets/images/footer-bg.jpg');
+        padding: $section-padding;
     }
     .wrapper{
         height: 300px;

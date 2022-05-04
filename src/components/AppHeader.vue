@@ -28,6 +28,13 @@ export default {
    .wrapper{
        @include flex-row-between;
        @include wrapper;
+       height: 80px;
+   }
+   .logo{
+       height: 80%;
+       img{
+           height: 100%;
+       }
    }
     
 </style>

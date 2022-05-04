@@ -60,13 +60,24 @@ export default {
 
     .outer{
         background-color: $blue;
+        padding: $section-padding;
     }
     .wrapper{
         @include wrapper;
     }
     ul{
         list-style: none;
-        @include flex-row-between;
+        @include flex-row-around;
+        li{
+            @include flex-row-between;
+            gap: 10px;
+            color: white;
+            text-transform: uppercase;
+            font-size: $ul-font-size;
+            img{
+                height: 45px;
+            }
+        }
     }
 
 </style>
