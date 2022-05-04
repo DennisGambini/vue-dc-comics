@@ -10,6 +10,10 @@
                         {{link.item}}
                     </li>
                 </ul>
+
+            </div>
+            <div class="img-wrapper">
+                <img src="../assets/images/dc-logo-bg.png" alt="logo sfondo DC">
             </div>
         </div>
     </div>
@@ -152,10 +156,12 @@ export default {
 
     .outer{
         background-image: url('../assets/images/footer-bg.jpg');
+        background-size: cover;
         padding: $section-padding;
     }
     .wrapper{
         @include wrapper;
+        @include flex-row-between;
     }
     .container{
         height: 250px;
@@ -169,6 +175,20 @@ export default {
     }
     ul{
         @include footer-middle-ul;
+    }
+    .img-wrapper{
+        height: 250px;
+        width: 60%;
+        overflow: hidden;
+        position: relative;
+        img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 165%;
+            z-index: 10;
+        }
     }
 
 </style>
