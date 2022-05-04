@@ -1,3 +1,18 @@
+// colori
+$footer-color: #303030;
+$blue: #0282F9; 
+$bg-black: #1C1C1C;
+
+// sizing
+
+// mixins
+@mixin btn{
+    text-transform: uppercase;
+    padding: 8px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid $blue;
+    color: white;
+}
 @mixin flex-row-between {
     display: flex;
     flex-direction: row;
@@ -5,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
 };
+
 @mixin flex-row-around {
     display: flex;
     flex-direction: row;
@@ -12,10 +28,12 @@
     justify-content: space-around;
     align-items: center;
 };
+
 @mixin wrapper {
     width: 75%;
     margin: 0 auto;
 };
+
 @mixin flex-col-between {
     display: flex;
     flex-direction: column;
@@ -24,9 +42,7 @@
     align-items: center;
 };
 
-$blue: #0282F9; 
-$bg-black: #1C1C1C;
-
+// template per ul footer
 @mixin footer-middle-ul {
     list-style: none;
     display: flex;
@@ -37,6 +53,9 @@ $bg-black: #1C1C1C;
     li:first-of-type{
         font-size: 1.2em;
         color: white;
+        &:hover{
+            color: red;
+        }
     }
     li{
         font-size: 0.7em;
