@@ -5,7 +5,7 @@
             <div class="logo">
                 <img src="../assets/images/dc-logo.png" alt="dc logo">
             </div>
-            <app-nav/>
+            <app-nav :links="allLinks[0].content"/>
         </div>
 
    
@@ -18,7 +18,12 @@ export default {
     name: 'AppHeader',
     components:{
         AppNav
-    }   
+    },
+    data(){
+        return{
+            allLinks: require('../assets/json/FooterLists.json'),
+        }
+    }
 }
 </script>
 
