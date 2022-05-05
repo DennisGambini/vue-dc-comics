@@ -5,7 +5,7 @@
     </header>
 
     <main>
-      <app-content/>
+      <jumbo-tron :sfondo="immagineJumbo" />
     </main>
 
     <footer>
@@ -17,15 +17,21 @@
 
 <script>
 import AppHeader from './components/AppHeader.vue';
-import AppContent from './components/AppContent.vue';
 import AppFooter from './components/AppFooter.vue';
+import JumboTron from './components/JumboTron.vue';
+
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    AppContent,
-    AppFooter
+    AppFooter,
+    JumboTron
+  },
+  data(){
+    return{
+      immagineJumbo: require('./assets/images/jumbotron.jpg')
+    }
   }
 }
 </script>
