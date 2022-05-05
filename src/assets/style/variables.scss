@@ -66,16 +66,19 @@ $card-font: 12px;
         font-size: 1.2em;
         color: white;
         margin-bottom: 15px;
+        cursor: default;
         &:hover{
-            color: red;
+            color: white;
         }
     }
     li{
         font-size: 0.7em;
-        color: #838483;
-        cursor: pointer;
-        &:hover{
-            color: $blue;
+        a{
+            color: #838483;
+            &:hover{
+                color: $blue;
+            }
         }
+        cursor: pointer;
     }
 }

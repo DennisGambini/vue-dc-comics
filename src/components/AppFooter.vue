@@ -2,7 +2,7 @@
     <div>
 
         <footer-up/>
-        <footer-middle/>
+        <footer-middle :liste="listeFooter"/>
         <footer-down/>
     </div>
     
@@ -19,6 +19,11 @@ export default {
         FooterUp,
         FooterMiddle,
         FooterDown
+    },
+    data(){
+        return{
+            listeFooter: require('../assets/json/FooterLists.json')
+        }
     }
 }
 </script>

@@ -33,7 +33,8 @@ export default {
   data(){
     return{
       immagineJumbo: require('./assets/images/jumbotron.jpg'),
-      dcJson: require('./assets/json/dc-comics.json')
+      dcJson: require('./assets/json/dc-comics.json'),
+      
     }
   },
   
