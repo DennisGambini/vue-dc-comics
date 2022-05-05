@@ -6,6 +6,7 @@
 
     <main>
       <jumbo-tron :sfondo="immagineJumbo" />
+      <app-grid :lista="dcJson"/>
     </main>
 
     <footer>
@@ -19,20 +20,23 @@
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
 import JumboTron from './components/JumboTron.vue';
-
+import AppGrid from './components/AppGrid.vue';
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     AppFooter,
-    JumboTron
+    JumboTron,
+    AppGrid
   },
   data(){
     return{
-      immagineJumbo: require('./assets/images/jumbotron.jpg')
+      immagineJumbo: require('./assets/images/jumbotron.jpg'),
+      dcJson: require('./assets/json/dc-comics.json')
     }
-  }
+  },
+  
 }
 </script>
 

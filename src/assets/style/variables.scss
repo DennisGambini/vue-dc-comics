@@ -2,11 +2,14 @@
 $footer-color: #303030;
 $blue: #0282F9; 
 $bg-black: #1C1C1C;
+$bg-footer-black: #1C1C1C;
 
 // sizing
 $ul-font-size: 12px;
 $ul-font-weight:500;
+$advertising-size: 20px;
 $section-padding: 40px 0;
+$card-font: 12px;
 
 // mixins
 @mixin btn{
